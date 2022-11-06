@@ -1,0 +1,520 @@
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <link data-theme-name="light" rel="stylesheet"
+        href="https://s3.whalefin.com/dist-web/whalefin-web/dist/antd.light.c35e7297.css">
+    <link rel="stylesheet" href="https://s3.whalefin.com/dist-web/whalefin-web/dist/umi.405e939d.css">
+    <link rel="icon" type="image/x-icon" href="https://pro.whalefin.com/icons/shortcut-icon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link type="text/css" rel="stylesheet" id="theme-style" data-cssvars="src" data-cssvars-job="1"
+        href="https://s3.whalefin.com/dist-web/whalefin-web/dist/light.655d2834.css">
+    <link type="text/css" rel="stylesheet" id="theme-style-amberui" data-cssvars="src" data-cssvars-job="1"
+        href="https://s3.whalefin.com/dist-web/whalefin-web/dist/amberui.light.b484bb88.css">
+    <title>Staking</title>
+
+    <link href="https://s.go-mpulse.net/boomerang/LUWGB-CLWUT-XDALE-96XGX-GGY8K" rel="preload" as="script">
+    <link rel="stylesheet" type="text/css"
+        href="https://s3.whalefin.com/dist-web/whalefin-web/dist/async-commons.86a0d7de.chunk.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://s3.whalefin.com/dist-web/whalefin-web/dist/layouts__index.2d4b5c6f.chunk.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://s3.whalefin.com/dist-web/whalefin-web/dist/p__invest__dual__main__index.d98a9141.chunk.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://s3.whalefin.com/dist-web/whalefin-web/dist/p__invest__staking__index.ada67e47.chunk.css">
+</head>
+
+<body data-theme="light">
+
+    <header class="ant-layout-header header___uDREA" id="id-header">
+        <div class="ant-carousel">
+          <div class="slick-slider home-carousel slick-initialized">
+            <div class="slick-list">
+              <div class="slick-track" style="opacity: 1; transform: translate3d(0px, 0px, 0px);"></div>
+            </div>
+          </div>
+        </div>
+        <div class="content___2-vnV">
+            <div class="logo___cQv-K" 
+            >
+            <img class="logo___cQv-K"  src="./source/metaharvest.jpg" />
+          </div>
+          <ul class="ant-menu-overflow ant-menu ant-menu-root ant-menu-horizontal ant-menu-light main-menu___1ARy1"
+            role="menu" tabindex="0" data-menu-list="true">
+            <li
+              class="ant-menu-overflow-item ant-menu-submenu ant-menu-submenu-horizontal ant-menu-submenu-active ant-menu-submenu-selected"
+              role="none" style="opacity: 1; order: 0;">
+              <div role="menuitem" class="ant-menu-submenu-title" tabindex="-1" aria-expanded="false"
+                aria-haspopup="true" data-menu-id="rc-menu-uuid-29468-1-trade"
+                aria-controls="rc-menu-uuid-29468-1-trade-popup"><span class="ant-menu-title-content">
+                  <p class="sub-menu-title"><span><a
+                    href="./Spot.html" >Trade</a></span><i class="sub-menu-title-icon"></i></p>
+                </span><i class="ant-menu-submenu-arrow"></i></div>
+              <div style="position: absolute; top: 0px; left: 0px; width: 100%;">
+                <div>
+                  <div
+                    class="ant-menu-submenu ant-menu-submenu-popup ant-menu ant-menu-light ant-menu-submenu-placement-bottomLeft  ant-menu-submenu-hidden"
+                    style="min-width: 44px; left: -789px; top: -923px;">
+                    <ul class="ant-menu ant-menu-sub ant-menu-vertical" id="rc-menu-uuid-29468-1-trade-popup"
+                      data-menu-list="true">
+                      <li role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-29468-1-/trade/swap"
+                        class="ant-menu-item ant-menu-item-only-child"><span class="ant-menu-title-content">
+                          <div class="sub-menu___1Y9gm"><img
+                              src="https://s3.whalefin.com/dist-web/whalefin-web/dist/static/nav-trade-swap.b62ebc2a.png">
+                            <div>
+                              <p class="sub-menu-title___3ZIY5">Swap</p>
+                              <p class="sub-menu-tip___5kAFb">Quick swap with 0 fees</p>
+                            </div>
+                          </div>
+                        </span></li>
+                      <li role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-29468-1-/trade/spot"
+                        class="ant-menu-item ant-menu-item-only-child"><span class="ant-menu-title-content">
+                          <div class="sub-menu___1Y9gm"><img
+                              src="https://s3.whalefin.com/dist-web/whalefin-web/dist/static/nav-trade-spot.fc8f21fa.png">
+                            <div>
+                              <p class="sub-menu-title___3ZIY5">Spot</p>
+                              <p class="sub-menu-tip___5kAFb">Trade popular coins at the best price</p>
+                            </div>
+                          </div>
+                        </span></li>
+                      <li role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-29468-1-/trade/margin"
+                        class="ant-menu-item ant-menu-item-only-child"><span class="ant-menu-title-content">
+                          <div class="sub-menu___1Y9gm"><img
+                              src="https://s3.whalefin.com/dist-web/whalefin-web/dist/static/nav-trade-margin.fdc9f10c.png">
+                            <div>
+                              <p class="sub-menu-title___3ZIY5">Margin</p>
+                              <p class="sub-menu-tip___5kAFb">5x leverage, cross margin &amp; physical settlement</p>
+                            </div>
+                          </div>
+                        </span></li>
+                      <li role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-29468-1-/trade"
+                        class="ant-menu-item ant-menu-item-selected ant-menu-item-only-child"><span
+                          class="ant-menu-title-content">
+                          <div class="sub-menu___1Y9gm"><img
+                              src="https://s3.whalefin.com/dist-web/whalefin-web/dist/static/nav-trade.65629a48.png">
+                            <div>
+                              <p class="sub-menu-title___3ZIY5">Traditional</p>
+                              <p class="sub-menu-tip___5kAFb">Quotes on tap &amp; quick order placing</p>
+                            </div>
+                          </div>
+                        </span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="ant-menu-overflow-item ant-menu-item ant-menu-item-only-child" role="menuitem" tabindex="-1"
+              style="opacity: 1; order: 1;" data-menu-id="rc-menu-uuid-29468-1-/earn"><span
+                class="ant-menu-title-content">
+                <div class="flex items-center"><span name="Earn" data-sensors-click="true"><a
+                      href="./Earn.html" >Earn</a></span></div>
+              </span></li>
+            <li class="ant-menu-overflow-item ant-menu-submenu ant-menu-submenu-horizontal" role="none"
+              style="opacity: 1; order: 2;">
+              <div role="menuitem" class="ant-menu-submenu-title" tabindex="-1"
+                data-menu-id="rc-menu-uuid-29468-1-invest" aria-expanded="false" aria-haspopup="true"
+                aria-controls="rc-menu-uuid-29468-1-invest-popup"><span class="ant-menu-title-content">
+                  <p class="sub-menu-title"><span><a
+                    href="./DualCurrency.html" >Invest</a></span><i class="sub-menu-title-icon"></i></p>
+                </span><i class="ant-menu-submenu-arrow"></i></div>
+            </li>
+            <li class="ant-menu-overflow-item ant-menu-item ant-menu-item-only-child" role="menuitem" tabindex="-1"
+              style="opacity: 1; order: 3;" data-menu-id="rc-menu-uuid-29468-1-/loan"><span
+                class="ant-menu-title-content">
+                <div class="flex items-center"><span name="Loan" data-sensors-click="true"><a
+                  href="./Loan.html" >Loan</a></span></div>
+              </span></li>
+            <li class="ant-menu-overflow-item ant-menu-item ant-menu-item-only-child" role="menuitem" tabindex="-1"
+              style="opacity: 1; order: 4;" data-menu-id="rc-menu-uuid-29468-1-/club"><span
+                class="ant-menu-title-content">
+                <div class="flex items-center"><span name="Club" data-sensors-click="true">Club</span></div>
+              </span></li>
+            <li class="ant-menu-overflow-item ant-menu-item ant-menu-item-only-child" role="menuitem" tabindex="-1"
+              style="opacity: 1; order: 5;" data-menu-id="rc-menu-uuid-29468-1-/eaas"><span
+                class="ant-menu-title-content">
+                <div class="flex items-center"><span name="Execution" data-sensors-click="true"><a
+                  href="./Execution.html" >Execution</a></span></div>
+              </span></li>
+            <li
+              class="ant-menu-overflow-item ant-menu-overflow-item-rest ant-menu-submenu ant-menu-submenu-horizontal ant-menu-submenu-disabled"
+              aria-hidden="true" role="none"
+              style="opacity: 0; height: 0px; overflow-y: hidden; order: 2147483647; pointer-events: none; position: absolute;">
+              <div role="menuitem" class="ant-menu-submenu-title" aria-expanded="false" aria-haspopup="true"
+                data-menu-id="rc-menu-uuid-29468-1-rc-menu-more" aria-controls="rc-menu-uuid-29468-1-rc-menu-more-popup"
+                aria-disabled="true"><span role="img" aria-label="ellipsis" class="anticon anticon-ellipsis"><svg
+                    viewBox="64 64 896 896" focusable="false" data-icon="ellipsis" width="1em" height="1em"
+                    fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M176 511a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0z">
+                    </path>
+                  </svg></span><i class="ant-menu-submenu-arrow"></i></div>
+            </li>
+          </ul>
+          <div aria-hidden="true" style="display: none;"></div>
+          <div class="h-full">
+            <div class="ant-row ant-row-end" style="row-gap: 0px;">
+              <div class="ant-col">
+                <div class="flex items-center contact-content___gNFdE">
+                  <div class="item-noToken___1ghei">
+                    <div class="ant-space ant-space-horizontal ant-space-align-center" style="gap: 8px;">
+                      <div class="ant-space-item" style=""><button type="button"
+                          class="ant-btn ant-btn-default"><span>Log In</span></button></div>
+                      <div class="ant-space-item" style=""><button type="button"
+                          class="ant-btn ant-btn-primary"><span>Register</span></button></div>
+                      <div class="ant-space-item">
+                        <div class="contact-header___TbsJB"></div>
+                      </div>
+                    </div><i class="line-decoration___mmAkP"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="ant-col flex items-center"><span role="img" tabindex="-1"
+                  class="amberui-icon anticon a-icon___qhD4c undefined hover" style="height: 28px;"><svg width="1em"
+                    height="1em" fill="currentColor" aria-hidden="true" focusable="false" class="">
+                    <use xlink:href="#icon-nav-download"></use>
+                  </svg></span></div>
+              <div class="ant-col">
+                <div class="intl-select___1ckwW">
+                  <div class="flex items-center intl-select-wrapper___1Wdf8"><span role="img"
+                      class="amberui-icon anticon a-icon___qhD4c ant-dropdown-trigger hover" style="height: 28px;"><svg
+                        width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" class="">
+                        <use xlink:href="#icon-nav-language"></use>
+                      </svg></span></div>
+                </div>
+              </div>
+              <div class="ant-col flex items-center"><span role="img" tabindex="-1"
+                  class="amberui-icon anticon a-icon___qhD4c undefined hover" style="height: 32px; width: 32px;"><svg
+                    width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" class="">
+                    <use xlink:href="#icon-nav-dark"></use>
+                  </svg></span></div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+    <div id="root">
+        <section class="ant-layout main-layout___1Mvtz">
+            <main class="ant-layout-content showContent___aCcD9" id="MainContent">
+                <div class="staking-wrap___1K16G">
+                    <div class="ant-carousel">
+                        <div class="slick-slider slick-initialized">
+                            <div class="slick-list">
+                                <div class="slick-track"
+                                    style="width: 806px; opacity: 1; transform: translate3d(0px, 0px, 0px);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-wrap___3ooad">
+                        <div class="ant-spin-nested-loading">
+                            <div class="ant-spin-container">
+                                <div class="ant-table-wrapper">
+                                    <div class="ant-spin-nested-loading">
+                                        <div class="ant-spin-container">
+                                            <div class="ant-table">
+                                                <div class="ant-table-container">
+                                                    <div class="ant-table-content">
+                                                        <table style="table-layout: auto;">
+                                                            <colgroup>
+                                                                <col style="width: 19%;">
+                                                                <col style="width: 10%;">
+                                                                <col style="width: 11%;">
+                                                                <col style="width: 15%;">
+                                                                <col style="width: 12%;">
+                                                                <col style="width: 13%;">
+                                                                <col style="width: 20%;">
+                                                            </colgroup>
+                                                            <thead class="ant-table-thead">
+                                                                <tr>
+                                                                    <th class="ant-table-cell">Staking project</th>
+                                                                    <th class="ant-table-cell"
+                                                                        style="text-align: right;">Currency</th>
+                                                                    <th class="ant-table-cell"
+                                                                        style="text-align: right;">APR<span role="img"
+                                                                            class="amberui-icon anticon a-icon___qhD4c ml-1"><svg
+                                                                                width="1em" height="1em"
+                                                                                fill="currentColor" aria-hidden="true"
+                                                                                focusable="false" class="">
+                                                                                <use xlink:href="#icon-icon-question">
+                                                                                </use>
+                                                                            </svg></span></th>
+                                                                    <th class="ant-table-cell"
+                                                                        style="text-align: right;">Min. amount per order
+                                                                    </th>
+                                                                    <th class="ant-table-cell"
+                                                                        style="text-align: right;">Principal<span
+                                                                            role="img"
+                                                                            class="amberui-icon anticon a-icon___qhD4c ml-1"><svg
+                                                                                width="1em" height="1em"
+                                                                                fill="currentColor" aria-hidden="true"
+                                                                                focusable="false" class="">
+                                                                                <use xlink:href="#icon-icon-question">
+                                                                                </use>
+                                                                            </svg></span></th>
+                                                                    <th class="ant-table-cell"
+                                                                        style="text-align: right;">On-chain
+                                                                        interest<span role="img"
+                                                                            class="amberui-icon anticon a-icon___qhD4c ml-1"><svg
+                                                                                width="1em" height="1em"
+                                                                                fill="currentColor" aria-hidden="true"
+                                                                                focusable="false" class="">
+                                                                                <use xlink:href="#icon-icon-question">
+                                                                                </use>
+                                                                            </svg></span></th>
+                                                                    <th class="ant-table-cell"
+                                                                        style="text-align: right;"></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody class="ant-table-tbody">
+                                                                <tr data-row-key="1"
+                                                                    class="ant-table-row ant-table-row-level-0">
+                                                                    <td class="ant-table-cell">
+                                                                        <div class="ccy-wrap___3rRu4"><img alt="ETH"
+                                                                                src="https://static-acp.whalefin.com/14/image/a0e17fc5cf580d61334c7f8812938f9c.png"
+                                                                                width="32">
+                                                                            <div class="ccy-content___G-IOl">Ethereum
+                                                                                2.0<div class="label-wrap___1UIVM">
+                                                                                    <div class="unable-redeem___1R6FB">
+                                                                                        Redeemable after SH upgrade
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">ETH</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">4.24%</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">0.1</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">**.**</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">**.**</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">
+                                                                        <div class="btn-wrap___32R8Y"><button
+                                                                                type="button"
+                                                                                class="ant-btn ant-btn-default"><span>Details</span></button><button
+                                                                                type="button"
+                                                                                class="ant-btn ant-btn-primary"><span>Go</span></button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr data-row-key="2"
+                                                                    class="ant-table-row ant-table-row-level-0">
+                                                                    <td class="ant-table-cell">
+                                                                        <div class="ccy-wrap___3rRu4"><img alt="SOL"
+                                                                                src="https://amber-aceup-test.oss-cn-hongkong.aliyuncs.com/10/image/8d76e7b97af8906f1bf6b135905dd4f7.png"
+                                                                                width="32">
+                                                                            <div class="ccy-content___G-IOl">Solana<div
+                                                                                    class="label-wrap___1UIVM"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">SOL</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">5.22%</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">10</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">**.**</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">**.**</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">
+                                                                        <div class="btn-wrap___32R8Y"><button
+                                                                                type="button"
+                                                                                class="ant-btn ant-btn-default"><span>Details</span></button><button
+                                                                                type="button"
+                                                                                class="ant-btn ant-btn-primary"><span>Go</span></button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr data-row-key="3"
+                                                                    class="ant-table-row ant-table-row-level-0">
+                                                                    <td class="ant-table-cell ant-table-cell-row-hover">
+                                                                        <div class="ccy-wrap___3rRu4"><img alt="ATOM"
+                                                                                src="https://static-acp.whalefin.com/14/image/c2a789c9e7ba27be47c2b4ff1380fb9a.png"
+                                                                                width="32">
+                                                                            <div class="ccy-content___G-IOl">Cosmos<div
+                                                                                    class="label-wrap___1UIVM"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="ant-table-cell ant-table-cell-row-hover"
+                                                                        style="text-align: right;">ATOM</td>
+                                                                    <td class="ant-table-cell ant-table-cell-row-hover"
+                                                                        style="text-align: right;">18.94%</td>
+                                                                    <td class="ant-table-cell ant-table-cell-row-hover"
+                                                                        style="text-align: right;">20</td>
+                                                                    <td class="ant-table-cell ant-table-cell-row-hover"
+                                                                        style="text-align: right;">**.**</td>
+                                                                    <td class="ant-table-cell ant-table-cell-row-hover"
+                                                                        style="text-align: right;">**.**</td>
+                                                                    <td class="ant-table-cell ant-table-cell-row-hover"
+                                                                        style="text-align: right;">
+                                                                        <div class="btn-wrap___32R8Y"><button
+                                                                                type="button"
+                                                                                class="ant-btn ant-btn-default"><span>Details</span></button><button
+                                                                                type="button"
+                                                                                class="ant-btn ant-btn-primary"><span>Go</span></button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr data-row-key="7"
+                                                                    class="ant-table-row ant-table-row-level-0">
+                                                                    <td class="ant-table-cell">
+                                                                        <div class="ccy-wrap___3rRu4"><img alt="ADA"
+                                                                                src="https://static-acp.whalefin.com/14/image/9ffda35e039422d7c00f74748a1db1b3.png"
+                                                                                width="32">
+                                                                            <div class="ccy-content___G-IOl">Cardano<div
+                                                                                    class="label-wrap___1UIVM"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">ADA</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">3.34%</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">500</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">**.**</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">**.**</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">
+                                                                        <div class="btn-wrap___32R8Y"><button
+                                                                                type="button"
+                                                                                class="ant-btn ant-btn-default"><span>Details</span></button><button
+                                                                                type="button"
+                                                                                class="ant-btn ant-btn-primary"><span>Go</span></button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr data-row-key="5"
+                                                                    class="ant-table-row ant-table-row-level-0">
+                                                                    <td class="ant-table-cell">
+                                                                        <div class="ccy-wrap___3rRu4"><img alt="DOT"
+                                                                                src="https://static-acp.whalefin.com/14/image/92a3d32cce2c54e9ba209fc5e83414c0.png"
+                                                                                width="32">
+                                                                            <div class="ccy-content___G-IOl">Polkadot
+                                                                                <div class="label-wrap___1UIVM"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">DOT</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">12.38%</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">30</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">**.**</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">**.**</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">
+                                                                        <div class="btn-wrap___32R8Y"><button
+                                                                                type="button"
+                                                                                class="ant-btn ant-btn-default"><span>Details</span></button><button
+                                                                                type="button"
+                                                                                class="ant-btn ant-btn-primary"><span>Go</span></button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr data-row-key="6"
+                                                                    class="ant-table-row ant-table-row-level-0">
+                                                                    <td class="ant-table-cell">
+                                                                        <div class="ccy-wrap___3rRu4"><img alt="KSM"
+                                                                                src="https://static-acp.whalefin.com/14/image/72c99e734fdc0429c7c9f66d2fc5238d.png"
+                                                                                width="32">
+                                                                            <div class="ccy-content___G-IOl">Kusama<div
+                                                                                    class="label-wrap___1UIVM"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">KSM</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">8.27%</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">3</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">**.**</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">**.**</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">
+                                                                        <div class="btn-wrap___32R8Y"><button
+                                                                                type="button"
+                                                                                class="ant-btn ant-btn-default"><span>Details</span></button><button
+                                                                                type="button"
+                                                                                class="ant-btn ant-btn-primary"><span>Go</span></button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr data-row-key="4"
+                                                                    class="ant-table-row ant-table-row-level-0">
+                                                                    <td class="ant-table-cell">
+                                                                        <div class="ccy-wrap___3rRu4"><img alt="NEAR"
+                                                                                src="https://static-acp.whalefin.com/14/image/b490b3d1ec161e937cc6241448fe41fe.png"
+                                                                                width="32">
+                                                                            <div class="ccy-content___G-IOl">NEAR<div
+                                                                                    class="label-wrap___1UIVM"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">NEAR</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">9.40%</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">50</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">**.**</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">**.**</td>
+                                                                    <td class="ant-table-cell"
+                                                                        style="text-align: right;">
+                                                                        <div class="btn-wrap___32R8Y"><button
+                                                                                type="button"
+                                                                                class="ant-btn ant-btn-default"><span>Details</span></button><button
+                                                                                type="button"
+                                                                                class="ant-btn ant-btn-primary"><span>Go</span></button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div></div>
+                    </div>
+                </div>
+            </main>
+        </section>
+    </div><iframe data-product="web_widget" title="No content" role="presentation" tabindex="-1" allow="microphone *"
+        aria-hidden="true" src="cid:frame-F6808BED24064B2651A5487D73EDCE4F@mhtml.blink"
+        style="width: 0px; height: 0px; border: 0px; position: absolute; top: -9999px;"></iframe>
+    <div
+        style="position: fixed; box-shadow: rgba(36, 36, 36, 0.1) 0px 8px 24px 0px, rgba(71, 69, 123, 0.04) 0px 1px 4px 0px; z-index: 999999; border-radius: 0px; inset: auto 16px 88px auto; width: 380px; transition: height 0.7s cubic-bezier(0.66, 0, 0.1, 1) 0.2s; height: 0px;">
+        <iframe title="Messaging window"
+            style="width: 100%; height: 100%; position: absolute; border: 0px; border-radius: 0px;"></iframe></div>
+    <div></div><iframe id="universal_pixel_qzxar72" height="0" width="0" style="display:none;"
+        src="cid:frame-C664713B6C591DDF8D004186169CCD67@mhtml.blink" title="TTD Universal Pixel"></iframe><iframe
+        id="gVUvHWZmhdzO6k85" style="display: none;"></iframe>
+    <div style="display: none;"></div>
+</body>
+
+</html>
