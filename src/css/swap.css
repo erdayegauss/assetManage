@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+.body{
+  background: #141627;
+  font-family: 'Inter', sans-serif;
+  width: 70%;
+  padding: 3%;
+  border: 5px solid;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'part1  part2';
+  gap: 10px;
+  background-color: #fdfdfdf1;
+  padding: 10px;
+}
+
+.earn1{
+  grid-area: part1;
+  background: #fdfdfdf1;
+  font-family: 'Inter', sans-serif;
+  padding: 3%;
+  border: 5px solid;
+  width: 700px;
+  margin-top: 5%;
+}
+
+.earn2{
+  grid-area: part2;
+  background: #fdfdfdf1;
+  font-family: 'Inter', sans-serif;
+  padding: 3%;
+  border: 5px solid;
+  margin-top: 5%;
+}
+
+
+
+.farming-container{
+
+  box-sizing: border-box;
+  box-shadow: 0px 4px 12px #333443;
+  @apply bg-[#ffffff21]  border border-[#A2A2A2] rounded-md p-4  lg:p-12 ;
+}
+
+.input{
+  @apply w-full text-white bg-transparent border border-white py-2 px-3 focus:outline-none focus:ring focus:ring-[#8C98FF] ease-out duration-500 ;
+}
+
+.input-btn-label{
+  @apply w-40 border bg-[#ffffff4f] text-white rounded-r-md px-2 focus:outline-none ;
+}
+
+.stake{
+  @apply w-full bg-[#8C98FF] text-white text-center font-bold rounded-md p-2 mt-4 hover:bg-[#8c97ff63] hover:border-[#a4adff] ease-out duration-500 ;
+}
+
+.un-stake{
+  @apply w-full text-white text-center font-bold rounded-md p-2 mt-2 hover:bg-[#ffffff28] ease-out duration-500;
+}
+
+.connect-btn{
+  @apply w-40 text-white text-center font-bold rounded-md hover:bg-[#ffffff28] ease-out duration-500;
+}
+
+.add-tether{
+  @apply w-full text-white bg-transparent text-center text-sm font-medium uppercase rounded-md p-2 mt-2 hover:bg-[#ffffff28] ease-out duration-500;
+}
+
