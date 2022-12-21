@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
 
 .body{
-  background: #141627;
+  background: #142227;
   font-family: 'Inter', sans-serif;
   width: 70%;
   padding: 3%;
@@ -23,6 +23,7 @@
   gap: 10px;
   background-color: #fdfdfdf1;
   padding: 10px;
+
 }
 
 .earn1{
@@ -77,3 +78,144 @@
   @apply w-full text-white bg-transparent text-center text-sm font-medium uppercase rounded-md p-2 mt-2 hover:bg-[#ffffff28] ease-out duration-500;
 }
 
+
+.parent {
+  margin: 1px;
+  text-align: center;
+  align-items: center;
+  justify-items: flex-start;
+  height: 40px;
+}
+.parent-loan {
+  margin: 1px;
+  text-align: center;
+  align-items: center;
+  justify-items: right;
+  height: 80px;
+}
+
+
+.parent-earn {
+  margin: 1px;
+  text-align: center;
+  align-items: center;
+  justify-items: start;
+  height: 30px;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.flex-container > div {
+  margin: 0 1px;
+  text-align: center;
+}
+
+
+.spot-container {
+  display: flex;
+  align-items: center;
+  vertical-align:bottom;
+  height: 50px;
+  border-top: 1px solid var(--font-color-disabled);
+  border-bottom: 1px solid var(--font-color-disabled);
+}
+
+
+.spot-container1 {
+  display: flex;
+  align-items: center;
+  vertical-align:bottom;
+  height: 50px;
+  border-top: 1px solid var(--font-color-disabled);
+  border-bottom: 1px solid var(--font-color-disabled);
+  padding: 5px;
+}
+
+
+.loan-container {
+  display:flex;
+  align-items: center;
+  height: 500px;
+  padding: 5px;
+  justify-content: center;
+  background-color: greenyellow;
+}
+
+
+.loan-container1 {
+  display:flex;
+  align-items: center;
+  padding: 5px;
+  justify-content: center;
+  background-color: greenyellow;
+}
+
+
+.no-bullets {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+
+
+.formula-wrapper {
+
+  width: 600px;
+  height: 462px;
+  display: flex;
+  justify-content: center;
+  background: rgb(44 207 159 / 10%);
+  border-radius: 4px;
+  position: relative;
+  color: #637683;
+}
+
+.formula___1W5KK {
+  width: 520px;
+  padding: 32px 24px 35px;
+}
+
+.entry-panel___RxvD3 {
+  font-size: 12px;
+}
+
+.iconCoin___377Bj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 36px!important;
+}
+
+
+.value___3Degl {
+  font-weight: 700;
+  color: #0f0f0f;
+}
+
+.output-panel___2Gkup {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-top: 1px solid #cccccc;
+}
+
+.borrowBtn___k3KKD {
+  width: 100%;
+  display: flex;
+}
+
+.formula-item___-AVzv {
+  color: #666666;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}

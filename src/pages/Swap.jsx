@@ -1,5 +1,6 @@
 import React from 'react';
-import { Slides, Header } from '../components';
+import { Slides, Header, Button } from '../components';
+import Divider from '@mui/material/Divider';
 
 
 const Swap = () => {
@@ -24,40 +25,57 @@ const Swap = () => {
 
 <div className='farming-container  m-12 lg:m-0'>
 
-<h1 className='text-xl text-white font-bold'>Brownie Yield Farm</h1>
+<h1 className='text-xl text-white font-bold'>Metaharvest Swap</h1>
 <div className='flex justify-between pt-1'>
-    <p className='text-sm text-white'><strong className='font-bold'>Wallet balance :</strong> 1300 <small className='font-bold'>TETHER</small></p>
-    {
-            <p className='text-sm text-white font-bold w-20 lg:w-40 truncate'>0x12345</p>
-
-    }
     
 </div>
 
 <div className='flex justify-between pt-6 lg:pt-12'>
     <div className='p-3 bg-[#72737D] w-2/5 rounded-md'>
-        <p className='text-white'><strong className='font-bold'>Staking balance</strong> 1458 </p>
+        <p className='text-white'><strong className='font-bold'>BTC balance</strong> 10 </p>
     </div>
     <div className='p-3 bg-[#72737D] w-2/5 rounded-md'>
-        <p className='text-white'><strong className='font-bold'>Reword balance </strong> 1456 </p>
+        <p className='text-white'><strong className='font-bold'>USDT balance </strong> 14560 </p>
     </div>
 </div>
 
 <div className="flex flex-row pt-6">
-    <input type="number" placeholder="Type here" value='14' onChange={()=>{}} className="input rounded-l-md" />
+    <input type="number" placeholder="Type here" value='0' onChange={()=>{}} className="input rounded-l-md" />
     <span className="input-btn-label flex items-center justify-center" >
-        <img src='src/logo.svg' width={30} height={30} alt="tether image"/>
-        <p className='font-white font-bold'>Tether</p>
+    <button>
+      <div className="flex items-center justify-center">
+        <img src='/img/btc.png' width={30} height={30} alt="tether image"/>
+        <p className='font-white font-bold'>BTC</p>
+      </div>
+    </button>
     </span>
 </div>
 
-<button className='stake' onClick={()=>{}}>STAKE</button>
-<button className='un-stake' onClick={()=>{}}>UN-STAKE</button>
-<button className='add-tether' onClick={()=>{}}>Add 2TETHER in your account for testing</button>
-{
-  <button className='p-2 bg-white font-bold w-full rounded-sm ' onClick={()=>{}}>Issue reword</button>
+<div style={{padding: "10px", color: "white"}} >
+          <Divider   flexItem>
+    <div className='flex items-center justify-center'>
+    <img src="/img/swap.png" width="40%" />
+    </div>
+  </Divider>
+  </div>
 
-}
+
+<div className="flex flex-row pt-6">
+    <input type="number" placeholder="Type here" value='0' onChange={()=>{}} className="input rounded-l-md" />
+    <span className="input-btn-label flex items-center justify-center" >
+      <button>
+      <div className="flex items-center justify-center" >
+        <img src='/img/tether.png' width={30} height={30} alt="tether image"/>
+        <p className='font-white font-bold'>Tether</p>
+        </div>
+        </button>
+    </span>
+</div>
+
+<div style={{"padding":"40px"}}>
+<button className='stake'  onClick={()=>{}}>SWAP</button>
+</div>
+
 
 </div>
 </div>

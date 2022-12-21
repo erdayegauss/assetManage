@@ -3,11 +3,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { Validation, TwoFactor, Dashboard, Register, Login, ProtectedRoute, AuthedRoute,  Navbar, Footer, Sidebar, ThemeSettings } from './components';
-import { Swap, Earn,Exchange, Tx, Network, Defi, Whitelist, Clearance, Settlement, Assets, Accounts, Calendar, Stacked, Pyramid, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
+import { Invest, Loan, Swap, Earn,Exchange, Tx, Network, Defi, Whitelist, Clearance, Settlement, Assets, Accounts, Calendar, Stacked, Pyramid, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor, Spot } from './pages';
 import './App.css';
 import './css/swap.css'
 import UseToken from './components/UseToken';
-
 
 import { useStateContext } from './contexts/ContextProvider';
 
@@ -41,11 +40,11 @@ const App = () => {
     }
   }, []);
 
-
+/*
   if(!token) {
     return <Login setToken={setToken} />
   }
-
+*/
   return (
     <div className={currentMode === 'Dark' ? 'dark' : ''}>
       <BrowserRouter>
@@ -97,6 +96,10 @@ const App = () => {
                 <Route path="/" element={(<Login />)} />
                 <Route path="/swap" element={(<Swap />)} />
                 <Route path="/earn" element={(<Earn />)} />
+                <Route path="/loan" element={(<Loan />)} />
+                <Route path="/dualcurrency" element={(<Invest />)} />
+                <Route path="/spot" element={(<Spot />)} />
+
 
                 {/* app  */}
                 <Route path="/clearance" element={<Clearance />} />

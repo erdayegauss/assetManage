@@ -25,3 +25,6 @@ export { default as Tx } from './Tx';
 export { default as Exchange } from './Exchange';
 export { default as Earn } from './Earn';
 export { default as Swap } from './Swap';
+export { default as Loan } from './Loan';
+export { default as Invest } from './Invest';
+export { default as Spot } from './Spot';
