@@ -51,12 +51,7 @@ const ExpandMore = styled((props) => {
         title={props.title}
         subheader={props.subheader}
       />
-      <CardMedia
-        component="img"
-        height="194"
-        image={props.image1}
-        alt={props.mediatitle}
-      />
+
       <CardContent>
         <Typography variant="body2" color="text.secondary">
           {props.intro}

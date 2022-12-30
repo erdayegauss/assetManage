@@ -2,6 +2,13 @@ import React from 'react';
 import { Slides, Header, Button } from '../components';
 import Divider from '@mui/material/Divider';
 
+import Box from '@mui/material/Box';
+import Tab from '@mui/material/Tab';
+import TabContext from '@mui/lab/TabContext';
+import Tabs from '@mui/material/Tabs';
+
+import TabPanel from '@mui/lab/TabPanel';
+
 
 const Swap = () => {
   const toolbarOptions = ['Search'];
@@ -15,70 +22,69 @@ const Swap = () => {
 
 
 
+  const [value, setValue] = React.useState('1');
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+
+  const [value1, setValue1] = React.useState('1');
+  const handleChange1 = (event, newValue1) => {
+    setValue1(newValue1);
+  };
+
+  const [value2, setValue2] = React.useState('1');
+  const handleChange2 = (event, newValue2) => {
+    setValue2(newValue2);
+  };
+
 
 
 
   return (
 
 
-<div className=" body center  rounded-3xl">
+    <div className=" center  rounded-3xl">
 
-<div className='farming-container  m-12 lg:m-0'>
 
-<h1 className='text-xl text-white font-bold'>Metaharvest Swap</h1>
-<div className='flex justify-between pt-1'>
-    
-</div>
 
-<div className='flex justify-between pt-6 lg:pt-12'>
-    <div className='p-3 bg-[#72737D] w-2/5 rounded-md'>
-        <p className='text-white'><strong className='font-bold'>BTC balance</strong> 10 </p>
+
+
+      <TabContext value={value}>
+        <Box sx={{ borderBottom: 'none', padding: '2%' }}>
+
+          <Tabs onChange={handleChange} aria-label="Tabs">
+            <Tab label="uniswap" value="1" />
+            <Tab label="quickswap" value="2" />
+          </Tabs>
+          <TabPanel value="1">
+
+
+            <div>
+              <div class="uniswapdiv">
+                <iframe class="ifuniswap" src="https://app.uniswap.org/#/swap" scrolling="no" title="uniswap" frameBorder="0">
+                </iframe>
+              </div>
+            </div>
+
+
+
+          </TabPanel>
+          <TabPanel value="2">
+
+            <div>
+              <div class="quickswapdiv">
+                <iframe class="ifquickswap" src="https://quickswap.exchange/#/swap?swapIndex=0&currency0=ETH" scrolling="no" title="uniswap" frameBorder="0">
+                </iframe>
+              </div>
+            </div>
+          </TabPanel>
+
+        </Box>
+      </TabContext>
+
+
     </div>
-    <div className='p-3 bg-[#72737D] w-2/5 rounded-md'>
-        <p className='text-white'><strong className='font-bold'>USDT balance </strong> 14560 </p>
-    </div>
-</div>
-
-<div className="flex flex-row pt-6">
-    <input type="number" placeholder="Type here" value='0' onChange={()=>{}} className="input rounded-l-md" />
-    <span className="input-btn-label flex items-center justify-center" >
-    <button>
-      <div className="flex items-center justify-center">
-        <img src='/img/btc.png' width={30} height={30} alt="tether image"/>
-        <p className='font-white font-bold'>BTC</p>
-      </div>
-    </button>
-    </span>
-</div>
-
-<div style={{padding: "10px", color: "white"}} >
-          <Divider   flexItem>
-    <div className='flex items-center justify-center'>
-    <img src="/img/swap.png" width="40%" />
-    </div>
-  </Divider>
-  </div>
-
-
-<div className="flex flex-row pt-6">
-    <input type="number" placeholder="Type here" value='0' onChange={()=>{}} className="input rounded-l-md" />
-    <span className="input-btn-label flex items-center justify-center" >
-      <button>
-      <div className="flex items-center justify-center" >
-        <img src='/img/tether.png' width={30} height={30} alt="tether image"/>
-        <p className='font-white font-bold'>Tether</p>
-        </div>
-        </button>
-    </span>
-</div>
-
-<div style={{"padding":"40px"}}>
-<button className='stake'  onClick={()=>{}}>SWAP</button>
-</div>
-
-
-</div>
-</div>
 
 
 

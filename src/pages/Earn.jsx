@@ -168,7 +168,7 @@ const Earn = () => {
             <Stack spacing={2}>
               <ProductCard title="16% APR Fixed Earn"
                 subheader="December 14, 2022" mediatitle="Dual Currency"
-                image="/img/btc.png" image1="/img/dual_currenc.png"
+                image="/img/btc.png" image1="/img/dualcurrency.png"
                 intro="Dual Currency Product is a non-principal protected investment product with floating return."
                 text1="What is Dual Currency?"
                 text2="Dual Currency Product is a non-principal protected investment product with floating return. The yield of the product is secured at the time of purchase, while the currency in which the product will be settled changes depending on how the Settlement Price compares with the Linked Price.
@@ -180,7 +180,7 @@ const Earn = () => {
 
               <ProductCard title="16% APR Fixed Earn"
                 subheader="December 14, 2022" mediatitle="Dual Currency"
-                image="/img/btc.png" image1="/img/dual_currenc.png"
+                image="/img/btc.png" image1="/img/dualcurrency1.png"
                 intro="Dual Currency Product is a non-principal protected investment product with floating return."
                 text1="What is Dual Currency?"
                 text2="Dual Currency Product is a non-principal protected investment product with floating return. The yield of the product is secured at the time of purchase, while the currency in which the product will be settled changes depending on how the Settlement Price compares with the Linked Price.
@@ -192,7 +192,7 @@ const Earn = () => {
 
               <ProductCard title="16% APR Fixed Earn"
                 subheader="December 14, 2022" mediatitle="Dual Currency"
-                image="/img/btc.png" image1="/img/dual_currenc.png"
+                image="/img/btc.png" image1="/img/dualcurrency.png"
                 intro="Dual Currency Product is a non-principal protected investment product with floating return."
                 text1="What is Dual Currency?"
                 text2="Dual Currency Product is a non-principal protected investment product with floating return. The yield of the product is secured at the time of purchase, while the currency in which the product will be settled changes depending on how the Settlement Price compares with the Linked Price.

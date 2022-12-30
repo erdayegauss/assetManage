@@ -1033,7 +1033,15 @@ export const links = [
             {
                 name: 'triditional',
                 icon: < AiOutlineShoppingCart / > ,
-            },                        
+            },   
+            {
+                name: 'dashboard',
+                icon: < AiOutlineShoppingCart / > ,
+            },   
+            {
+                name: 'navibar',
+                icon: < AiOutlineShoppingCart / > ,
+            },                                                
         ],
     },
 

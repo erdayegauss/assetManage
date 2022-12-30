@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-import { Validation, TwoFactor, Dashboard, Register, Login, ProtectedRoute, AuthedRoute,  Navbar, Footer, Sidebar, ThemeSettings } from './components';
-import { Invest, Loan, Swap, Earn,Exchange, Tx, Network, Defi, Whitelist, Clearance, Settlement, Assets, Accounts, Calendar, Stacked, Pyramid, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor, Spot } from './pages';
+import { Validation, TwoFactor, Register, Login, ProtectedRoute, AuthedRoute, Footer, Sidebar, ThemeSettings } from './components';
+import { Navibar, Dashboard, Invest, Loan, Swap, Earn,Exchange, Tx, Network, Defi, Whitelist, Clearance, Settlement, Assets, Accounts, Calendar, Stacked, Pyramid, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor, Spot } from './pages';
 import './App.css';
 import './css/swap.css'
 import UseToken from './components/UseToken';
@@ -65,28 +65,31 @@ const App = () => {
 
             </TooltipComponent>
           </div>
+{/*
+
           {activeMenu ? (
             <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white ">
               <Sidebar />
             </div>
           ) : (
             <div className="w-16 fixed sidebar dark:bg-secondary-dark-bg bg-white ">
-              {/*
+
             <div className="w-0 dark:bg-secondary-dark-bg">
-            */}
               <Sidebar />
             </div>
           )}
+
+*/}
+
+
           <div
             className={
-              activeMenu
-                ? 'dark:bg-main-dark-bg  bg-main-bg min-h-screen md:ml-72 w-full  '
-                : 'dark:bg-main-dark-bg  bg-main-bg min-h-screen md:ml-12 w-full  '
+                'dark:bg-main-dark-bg  bg-main-bg min-h-screen md:ml-12 w-full  '
             }
           >
             {/*                : 'bg-main-bg dark:bg-main-dark-bg  w-full min-h-screen flex-2 ' */}
             <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
-              <Navbar />
+              <Navibar />
             </div>
             <div>
               {themeSettings && (<ThemeSettings />)}
@@ -99,6 +102,7 @@ const App = () => {
                 <Route path="/loan" element={(<Loan />)} />
                 <Route path="/dualcurrency" element={(<Invest />)} />
                 <Route path="/spot" element={(<Spot />)} />
+                
 
 
                 {/* app  */}
@@ -109,6 +113,7 @@ const App = () => {
                 <Route path="/defi" element={<Defi />} />
                 <Route path="/Transactions" element={<Tx />} />
                 <Route path="/Exchange" element={<Exchange />} />
+                <Route path="/Dashboard" element={<Dashboard />} />
 
                 {/* login  */}
 
