@@ -11,6 +11,7 @@ import SellIcon from '@mui/icons-material/Sell';
 import PhoneIcon from '@mui/icons-material/Phone';
 import AppBar from '@mui/material/AppBar';
 import TextField from '@mui/material/TextField';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 
 import Paper from '@mui/material/Paper';
@@ -25,7 +26,7 @@ import MenuItem from '@mui/material/MenuItem';
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
-  padding: theme.spacing(1),
+  //  padding: theme.spacing(1),
   textAlign: 'center',
   color: theme.palette.text.secondary,
 }));
@@ -43,6 +44,11 @@ const rows = [
   createData('16% APR Fixed Earn', '10d', "3.7%", 67, 4.3),
   createData('16% APR Fixed Earn', '90d', "16.0%", 49, 3.9),
 ];
+
+
+
+
+
 
 
 
@@ -66,7 +72,17 @@ const currencies = [
 ];
 
 
-const Spot = () => {
+const Margin = () => {
+
+
+
+  const [selectedOption, setSelectedOption] = useState(null);
+  const options = ['Option 1', 'Option 2', 'Option 3'];
+
+  function handleOptionClick(option) {
+    setSelectedOption(option);
+  }
+
 
 
   const [value, setValue] = React.useState('1');
@@ -128,11 +144,31 @@ const Spot = () => {
 
 
 
-          <Grid container lg={5.5} spacing={8} >
+          <Grid container lg={5.9} spacing={8} >
 
 
 
             <div className=''>
+
+              <Item className='flex' style={{ "align-items": "center", }}>
+                <FormControl sx={{ m: 0, minWidth: 100 }} >
+                  <div className='flex' style={{ "align-items": "center", }}>
+                    <Button className='flex'><img src="/img/dollar.png" width="20px" />USD</Button>
+                  </div>
+                </FormControl>
+                <FormControl sx={{ m: 0, minWidth: 250, }} size="small">
+                  <TextField id="outlined-basic" label="Price" variant="filled" type="number"
+                    InputProps={{
+                      disableUnderline: true,
+                    }} />
+                </FormControl>
+              </Item>
+
+              <div style={{ padding: "15px", }} >
+                <Divider flexItem>
+
+                </Divider>
+              </div>
 
               <Item className='flex' style={{ "align-items": "center", }}>
                 <FormControl sx={{ m: 0, minWidth: 100 }} >
@@ -153,29 +189,58 @@ const Spot = () => {
               </Item>
 
 
-              <div style={{ padding: "10px", }} >
+              <div style={{ padding: "15px", }} >
                 <Divider flexItem>
-                  OR
+
                 </Divider>
               </div>
 
               <Item className='flex' style={{ "align-items": "center", }}>
                 <FormControl sx={{ m: 0, minWidth: 100 }} >
-
                   <div className='flex' style={{ "align-items": "center", }}>
-                    <Button className='flex'><img src="/img/dollar.png" width="20px" />USDⓢ</Button>
-                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg" class="sc-3zewi2-8 MZuqQ"><path d="M0.97168 1L6.20532 6L11.439 1" stroke="#AEAEAE"></path></svg>
+                    <Button className='flex'><img src="/img/dollar.png" width="20px" />USD</Button>
                   </div>
                 </FormControl>
                 <FormControl sx={{ m: 0, minWidth: 250, }} size="small">
-
                   <TextField id="outlined-basic" label="total" variant="filled"
                     InputProps={{
                       disableUnderline: true,
                     }} />
                 </FormControl>
-
               </Item>
+
+              <div style={{ padding: "15px", }} >
+
+              </div>
+
+              <div style={{ "backgroundColor": "#eaf2f4", "padding": "5px" }}>
+                <div class="dropdown">
+                  <div class="flex"><a class="dropbtn flex"><p>Cross</p><ArrowDropDownIcon /></a></div>
+                  <div class="dropdown-content">
+                    <a>Cross</a>
+                    <a>Isolated</a>
+                  </div>
+                </div>
+
+                <div class="dropdown">
+                  <div class="flex"><a class="dropbtn flex"><p>BTC-Margined</p><ArrowDropDownIcon /></a></div>
+                  <div class="dropdown-content">
+                    <a>BTC-Margined</a>
+                    <a>USDT-Margined</a>
+                  </div>
+                </div>
+
+
+                <div class="dropdown">
+                  <div class="flex"><a class="dropbtn flex"><p>5.00X</p><ArrowDropDownIcon /></a></div>
+                  <div class="dropdown-content">
+                    <a>2.00X</a>
+                    <a>5.00X</a>
+                    <a>10.00X</a>
+                    <a>100.00X</a>
+                  </div>
+                </div>
+              </div>
 
             </div>
 
@@ -188,14 +253,34 @@ const Spot = () => {
               <li className='ratio-li'>100%</li>
 
             </Stack>
-            <Button variant="contained" style={{ backgroundColor: "green", height: "40px", width: "80%", "padding": "10px" }} > BUY</Button>
+            <Button variant="contained" style={{ backgroundColor: "green", height: "40px", width: "75%", "padding": "10px" }} > BUY</Button>
           </Grid>
 
 
 
 
-          <Grid container lg={5.5} spacing={8} >
+          <Grid container lg={5.9} spacing={8} >
             <div className=''>
+              <Item className='flex' style={{ "align-items": "center", }}>
+                <FormControl sx={{ m: 0, minWidth: 100 }} >
+                  <div className='flex' style={{ "align-items": "center", }}>
+                    <Button className='flex'><img src="/img/dollar.png" width="20px" />USD</Button>
+                  </div>
+                </FormControl>
+                <FormControl sx={{ m: 0, minWidth: 250, }} size="small">
+                  <TextField id="outlined-basic" label="Price" variant="filled" type="number"
+                    InputProps={{
+                      disableUnderline: true,
+                    }} />
+                </FormControl>
+              </Item>
+
+              <div style={{ padding: "15px", }} >
+                <Divider flexItem>
+
+                </Divider>
+              </div>
+
               <Item className='flex' style={{ "align-items": "center", }}>
                 <FormControl sx={{ m: 0, minWidth: 100 }} >
 
@@ -215,29 +300,63 @@ const Spot = () => {
               </Item>
 
 
-              <div style={{ padding: "10px", }} >
+              <div style={{ padding: "15px", }} >
                 <Divider flexItem>
-                  OR
+
                 </Divider>
               </div>
 
               <Item className='flex' style={{ "align-items": "center", }}>
                 <FormControl sx={{ m: 0, minWidth: 100 }} >
-
                   <div className='flex' style={{ "align-items": "center", }}>
-                    <Button className='flex'><img src="/img/dollar.png" width="20px" />USDⓢ</Button>
-                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg" class="sc-3zewi2-8 MZuqQ"><path d="M0.97168 1L6.20532 6L11.439 1" stroke="#AEAEAE"></path></svg>
+                    <Button className='flex'><img src="/img/dollar.png" width="20px" />USD</Button>
                   </div>
                 </FormControl>
                 <FormControl sx={{ m: 0, minWidth: 250, }} size="small">
-
                   <TextField id="outlined-basic" label="total" variant="filled"
                     InputProps={{
                       disableUnderline: true,
                     }} />
                 </FormControl>
               </Item>
+
+
+
+              <div style={{ padding: "15px", }} >
+
+              </div>
+
+              <div style={{ "backgroundColor": "#eaf2f4", "padding": "5px" }}>
+                <div class="dropdown">
+                  <div class="flex"><a class="dropbtn flex"><p>Cross</p><ArrowDropDownIcon /></a></div>
+                  <div class="dropdown-content">
+                    <a>Cross</a>
+                    <a>Isolated</a>
+                  </div>
+                </div>
+
+                <div class="dropdown">
+                  <div class="flex"><a class="dropbtn flex"><p>BTC-Margined</p><ArrowDropDownIcon /></a></div>
+                  <div class="dropdown-content">
+                    <a>BTC-Margined</a>
+                    <a>USDT-Margined</a>
+                  </div>
+                </div>
+
+
+                <div class="dropdown">
+                  <div class="flex"><a class="dropbtn flex"><p>5.00X</p><ArrowDropDownIcon /></a></div>
+                  <div class="dropdown-content">
+                    <a>2.00X</a>
+                    <a>5.00X</a>
+                    <a>10.00X</a>
+                    <a>100.00X</a>
+                  </div>
+                </div>
+              </div>
+
             </div>
+
 
             <Stack direction="row" spacing={0.6} >
               <li className='ratio-li'>10%</li>
@@ -246,7 +365,7 @@ const Spot = () => {
               <li className='ratio-li'>75%</li>
               <li className='ratio-li'>100%</li>
             </Stack>
-            <Button variant="contained" style={{ backgroundColor: "red", height: "40px", width: "80%", "padding": "10px" }} > sell</Button>
+            <Button variant="contained" style={{ backgroundColor: "red", height: "40px", width: "75%", "padding": "10px" }} > sell</Button>
           </Grid>
 
           <div>
@@ -263,4 +382,4 @@ const Spot = () => {
   );
 
 };
-export default Spot;
+export default Margin;

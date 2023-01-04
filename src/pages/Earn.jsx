@@ -144,8 +144,6 @@ const Earn = () => {
                 </Table>
               </TableContainer>
 
-
-
             </TabPanel>
             <TabPanel value="2">Item Two</TabPanel>
             <TabPanel value="3">Item Three</TabPanel>
@@ -166,7 +164,7 @@ const Earn = () => {
 
 
             <Stack spacing={2}>
-              <ProductCard title="16% APR Fixed Earn"
+              <ProductCard title="24% APR Fixed Earn"
                 subheader="December 14, 2022" mediatitle="Dual Currency"
                 image="/img/btc.png" image1="/img/dualcurrency.png"
                 intro="Dual Currency Product is a non-principal protected investment product with floating return."
@@ -178,7 +176,7 @@ const Earn = () => {
               >
               </ProductCard>
 
-              <ProductCard title="16% APR Fixed Earn"
+              <ProductCard title="20% APR Fixed Earn"
                 subheader="December 14, 2022" mediatitle="Dual Currency"
                 image="/img/btc.png" image1="/img/dualcurrency1.png"
                 intro="Dual Currency Product is a non-principal protected investment product with floating return."
@@ -191,6 +189,18 @@ const Earn = () => {
               </ProductCard>
 
               <ProductCard title="16% APR Fixed Earn"
+                subheader="December 14, 2022" mediatitle="Dual Currency"
+                image="/img/btc.png" image1="/img/dualcurrency.png"
+                intro="Dual Currency Product is a non-principal protected investment product with floating return."
+                text1="What is Dual Currency?"
+                text2="Dual Currency Product is a non-principal protected investment product with floating return. The yield of the product is secured at the time of purchase, while the currency in which the product will be settled changes depending on how the Settlement Price compares with the Linked Price.
+              A short-term investment product, Dual Currency could potentially provide very high returns. We have also designed it with a selection of tenors, catering to your varying risk appetite.
+              Dual Currency - BTC"
+                text3="For BTC dual currency products, the Investment Currency is BTC - i.e. you purchase the product with BTC. The Settlement Currency could be either BTC or USDC, depending on how the Settlement Price (BTC’s price at the time of settlement; a detailed calculation method is provided below) compares with the Linked Price: if the Settlement Price is higher than the Linked Price, you will receive the return in BTC; if the Settlement Price is lower than the Linked Price, you will receive the return in USDC."
+              >
+              </ProductCard>
+
+              <ProductCard title="12% APR Fixed Earn"
                 subheader="December 14, 2022" mediatitle="Dual Currency"
                 image="/img/btc.png" image1="/img/dualcurrency.png"
                 intro="Dual Currency Product is a non-principal protected investment product with floating return."

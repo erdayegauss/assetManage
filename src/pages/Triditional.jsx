@@ -66,7 +66,7 @@ const currencies = [
 ];
 
 
-const Spot = () => {
+const Triditional = () => {
 
 
   const [value, setValue] = React.useState('1');
@@ -263,4 +263,4 @@ const Spot = () => {
   );
 
 };
-export default Spot;
+export default Triditional;

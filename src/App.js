@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { Validation, TwoFactor, Register, Login, ProtectedRoute, AuthedRoute, Footer, Sidebar, ThemeSettings } from './components';
-import { Navibar, Dashboard, Invest, Loan, Swap, Earn,Exchange, Tx, Network, Defi, Whitelist, Clearance, Settlement, Assets, Accounts, Calendar, Stacked, Pyramid, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor, Spot } from './pages';
+import { Margin, Triditional, Navibar, Dashboard, Invest, Loan, Swap, Earn,Exchange, Tx, Network, Defi, Whitelist, Clearance, Settlement, Assets, Accounts, Calendar, Stacked, Pyramid, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor, Spot } from './pages';
 import './App.css';
 import './css/swap.css'
 import UseToken from './components/UseToken';
@@ -102,8 +102,8 @@ const App = () => {
                 <Route path="/loan" element={(<Loan />)} />
                 <Route path="/dualcurrency" element={(<Invest />)} />
                 <Route path="/spot" element={(<Spot />)} />
-                
-
+                <Route path="/triditional" element={(<Triditional />)} />                
+                <Route path="/margin" element={(<Margin />)} />
 
                 {/* app  */}
                 <Route path="/clearance" element={<Clearance />} />

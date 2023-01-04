@@ -13,7 +13,7 @@ const Dashboard = () => {
 
           <div>
           <div class="lsdiv">
-            <iframe class="feargreedindex" src="http://www.coinglass.com/pro/i/FearGreedIndex" scrolling="no" title="W3Schools Free Online Web Tutorials">
+            <iframe class="feargreedindex" src="http://www.coinglass.com/pro/i/FearGreedIndex" scrolling="no" title="dashboard instance">
             </iframe>
           </div>
         </div>
@@ -24,7 +24,7 @@ const Dashboard = () => {
 
         <div>
           <div class="lsdiv">
-            <iframe class="volitility" src="http://www.coinglass.com/pro/i/bl" scrolling="no" title="W3Schools Free Online Web Tutorials">
+            <iframe class="volitility" src="http://www.coinglass.com/pro/i/bl" scrolling="no" title="dashboard instance">
             </iframe>
           </div>
         </div>
@@ -32,7 +32,7 @@ const Dashboard = () => {
 
         <div>
           <div class="lsdiv">
-            <iframe class="lsposition" src="http://www.coinglass.com/position" scrolling="no" title="W3Schools Free Online Web Tutorials">
+            <iframe class="lsposition" src="http://www.coinglass.com/position" scrolling="no" title="dashboard instance">
             </iframe>
           </div>
         </div>
@@ -40,7 +40,7 @@ const Dashboard = () => {
 
         <div>
           <div class="lsdiv">
-            <iframe class="avgbtc" src="https://www.coinglass.com/pro/AvgFunding/BTC" scrolling="no" title="W3Schools Free Online Web Tutorials">
+            <iframe class="avgbtc" src="https://www.coinglass.com/pro/AvgFunding/BTC" scrolling="no" title="dashboard instance">
             </iframe>
           </div>
         </div>
@@ -48,18 +48,18 @@ const Dashboard = () => {
 
 
         <div class="iframediv">
-          <iframe class="avgbtc" src="https://cryptoquant.com/asset/btc/summary/?" frameborder="0" title="W3Schools Free Online Web Tutorials">
+          <iframe class="avgbtc" src="https://cryptoquant.com/asset/btc/summary/?" frameborder="0" title="dashboard instance">
           </iframe>
         </div>
 
 
         <div class="iframediv">
-          <iframe class="nftscan" src="https://www.nftscan.com/" title="W3Schools Free Online Web Tutorials">
+          <iframe class="nftscan" src="https://www.nftscan.com/" title="dashboard instance">
           </iframe>
         </div>
 
         <div class="iframediv">
-          <iframe class="nftstats" src="https://www.nft-stats.com/" title="W3Schools Free Online Web Tutorials">
+          <iframe class="nftstats" src="https://www.nft-stats.com/" title="dashboard instance">
           </iframe>
         </div>
 
@@ -67,13 +67,13 @@ const Dashboard = () => {
 
 
 
-        <div class="iframediv">
-          <iframe class="LongShortRatio" src="https://www.coinglass.com/LongShortRatio" scrolling="no" title="W3Schools Free Online Web Tutorials">
+        <div class="longshortdiv">
+          <iframe class="LongShortRatio" src="https://www.coinglass.com/LongShortRatio" scrolling="no" title="dashboard instance">
           </iframe>
         </div>
 
         <div class="trackerdiv">
-          <iframe class="tracker" src="https://www.nftscan.com/analytics/tracker" scrolling="no" title="W3Schools Free Online Web Tutorials">
+          <iframe class="tracker" src="https://www.nftscan.com/analytics/tracker" scrolling="no" title="dashboard instance">
           </iframe>
         </div>
 
@@ -81,7 +81,7 @@ const Dashboard = () => {
 
         <div>
           <div class="nftdiv">
-            <iframe class="bayc" src="https://nftgo.io/collection/bored-ape-kennel-club/overview" scrolling="no" title="W3Schools Free Online Web Tutorials">
+            <iframe class="bayc" src="https://nftgo.io/collection/bored-ape-kennel-club/overview" scrolling="no" title="dashboard instance">
             </iframe>
           </div>
         </div>
@@ -89,7 +89,7 @@ const Dashboard = () => {
 
         <div>
           <div class="nftdiv">
-            <iframe class="punks" src="https://nftgo.io/collection/cryptopunks/overview" scrolling="no" title="W3Schools Free Online Web Tutorials">
+            <iframe class="punks" src="https://nftgo.io/collection/cryptopunks/overview" scrolling="no" title="dashboard instance">
             </iframe>
           </div>
         </div>
@@ -98,11 +98,11 @@ const Dashboard = () => {
 
 
         <div class="defillamadiv">
-          <iframe class="defillama" src="https://defillama.com/" scrolling="no" title="W3Schools Free Online Web Tutorials"></iframe>
+          <iframe class="defillama" src="https://defillama.com/" scrolling="no" title="dashboard instance"></iframe>
         </div>
 
         <div class="iframediv">
-          <iframe class="topgames" src="https://dappradar.com/topic/games" scrolling="no" title="W3Schools Free Online Web Tutorials"></iframe>
+          <iframe class="topgames" src="https://dappradar.com/topic/games" scrolling="no" title="dashboard instance"></iframe>
         </div>
 
 
@@ -112,11 +112,11 @@ const Dashboard = () => {
           <div class="flex">
 
             <div class="borrowearndiv">
-              <iframe class="borrowHist" src="https://linen.app/interest-rates/borrow/historical" scrolling="no" title="W3Schools Free Online Web Tutorials"></iframe>
+              <iframe class="borrowHist" src="https://linen.app/interest-rates/borrow/historical" scrolling="no" title="dashboard instance"></iframe>
             </div>
 
             <div class="borrowearndiv">
-              <iframe class="earnHist" src="https://linen.app/interest-rates/earn/historical" scrolling="no" title="W3Schools Free Online Web Tutorials"></iframe>
+              <iframe class="earnHist" src="https://linen.app/interest-rates/earn/historical" scrolling="no" title="dashboard instance"></iframe>
             </div>
           </div>
         </div>
