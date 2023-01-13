@@ -5,6 +5,7 @@ import { Button } from '.';
 import { userProfileData } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 import shuan from '../data/shuan.jpg';
+import LogOutButton from "./LogOutButton";
 
 const UserProfile = () => {
   const { currentColor } = useStateContext();
@@ -52,7 +53,7 @@ const UserProfile = () => {
         ))}
       </div>
       <div className="mt-5">
-        <Button
+        <LogOutButton
           color="white"
           bgColor={currentColor}
           text="Logout"

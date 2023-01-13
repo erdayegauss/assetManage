@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Route, Navigate } from "react-router-dom";
 import { useGlobalState } from "../contexts/GlobalContext";
 //import jwt from "jsonwebtoken";
@@ -6,10 +6,6 @@ import { useGlobalState } from "../contexts/GlobalContext";
 const AuthedRoute = ({ component: Component, ...rest }) => {
   const {
     toggleLoading,
-    changeCurrentUser,
-    editError,
-    editSuccess,
-    error,
   } = useGlobalState();
 
  

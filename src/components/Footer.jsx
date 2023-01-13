@@ -6,6 +6,10 @@ const Footer = () => (
       © 2022 All rights reserved by Metaharvest
     </p>
   </div>
+
+
+
+
 );
 
 export default Footer;

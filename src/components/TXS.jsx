@@ -31,15 +31,15 @@ import { format } from 'date-fns'
 
 
 let rows = [
-  createData(0, 3, 6.0, 0, "Pending","#FEC90F", "2022-09-12"),
+  createData(0, 3, 6.0, 0, "Pending", "#FEC90F", "2022-09-12"),
   createData(1, 3, 3.2, 1, "active", "#03c9d7", "2022-09-12"),
-  createData(2, 3, 7.0, 4, "done", "#8BE78B","2022-10-12"),
-  createData(1, 3, 6.2, 3, "done","#8BE78B", "2022-10-19"),
-  createData(3, 0,12.2, 2, "done","#8BE78B", "2022-8-12"),
+  createData(2, 3, 7.0, 4, "done", "#8BE78B", "2022-10-12"),
+  createData(1, 3, 6.2, 3, "done", "#8BE78B", "2022-10-19"),
+  createData(3, 0, 12.2, 2, "done", "#8BE78B", "2022-8-12"),
 ];
 
 
-function createData(source, destination, amount, asset, status,statusBg, createdAt) {
+function createData(source, destination, amount, asset, status, statusBg, createdAt) {
   return {
     source,
     destination,
@@ -82,7 +82,7 @@ const TXS = () => {
   const [note, setNote] = useState('');
 
   const handleTx = () => {
-    rows = [...rows, createData(3, destination.ID, amount, asset.id, "done","#8BE78B", format(new Date(), 'yyyy-mm-dd'))]
+    rows = [...rows, createData(3, destination.ID, amount, asset.id, "done", "#8BE78B", format(new Date(), 'yyyy-mm-dd'))]
     setData(rows)
     handleClose()
   }
@@ -92,18 +92,24 @@ const TXS = () => {
     const [open, setOpen] = React.useState(false);
     return (
       <>
-        <TableRow sx={{ '& > *': { borderBottom: 'unset' } }}>
-          <TableCell>
-            <IconButton
-              aria-label="expand row"
-              size="small"
-              onClick={() => setOpen(!open)}
-            >
-              {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
-            </IconButton>
-          </TableCell>
-          <TableCell >
-          <Box  sx={{ '& > img': { mr: 1,  } }} {...props}>
+        <TableContainer component={Paper} style={{ width: '100%' }} >
+
+          <Table sx={{ "& td, &  th": { border: 0 } }} size="large" aria-label="">
+
+            <TableBody >
+
+              <TableRow >
+                <TableCell>
+                  <IconButton
+                    aria-label="expand row"
+                    size="small"
+                    onClick={() => setOpen(!open)}
+                  >
+                    {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+                  </IconButton>
+                </TableCell>
+                <TableCell >
+                  <Box >
                     <img
                       loading="eager"
                       width="30"
@@ -111,10 +117,10 @@ const TXS = () => {
                       alt=""
                     />
                   </Box>
-          </TableCell>
-          <TableCell>
-            
-          <Box  sx={{ '& > img': { mr: 1,  } }} {...props}>
+                </TableCell>
+                <TableCell>
+
+                  <Box >
                     <img
                       loading="eager"
                       width="30"
@@ -122,10 +128,10 @@ const TXS = () => {
                       alt=""
                     />
                   </Box>
-            </TableCell>
-          <TableCell>{row.amount}</TableCell>
-          <TableCell style={{width: "10px"}} align="right">
-          <Box  sx={{ '& > img': { mr: 1,  } }} {...props}>
+                </TableCell>
+                <TableCell>{row.amount}</TableCell>
+                <TableCell style={{ width: "10px" }} align="right">
+                  <Box >
                     <img
                       loading="eager"
                       width="30"
@@ -133,46 +139,49 @@ const TXS = () => {
                       alt=""
                     />
                   </Box>
-          </TableCell>
-          <TableCell align="right">
-          <button type = "button"
-    style = {{ background: row.statusBg }}
-    className = "text-white py-1 px-2 capitalize rounded-2xl text-md" > { row.status} </button>
-          </TableCell>
-          <TableCell align="right">{row.createdAt}</TableCell>
-        </TableRow>
-        <TableRow>
-          <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={7}>
-            <Collapse in={open} timeout="auto" unmountOnExit>
-              <Box style={{ backgroundColor: "#f7f4ef", }} >
-                <Typography variant="h6" gutterBottom component="div">
-                  History
-                </Typography>
+                </TableCell>
+                <TableCell align="right">
+                  <button type="button"
+                    style={{ background: row.statusBg }}
+                    className="text-white py-1 px-2 capitalize rounded-2xl text-md" > {row.status} </button>
+                </TableCell>
+                <TableCell align="right">{row.createdAt}</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={7}>
+                  <Collapse in={open} timeout="auto" unmountOnExit>
+                    <div style={{ backgroundColor: "#f0f0f0", }} >
+                      <Typography variant="h6" gutterBottom component="div">
+                        History
+                      </Typography>
 
-                <div >
-                  {row.history.map((historyRow) =>
-                    <>
-                      <div class="history">
-                        <p style={{ fontWeight: "bold" }}>Transaction type:</p><p> {historyRow.Type}</p><p style={{ fontWeight: "bold" }}>TX ID:</p><p> {historyRow.TxID}</p>
+                      <div >
+                        {row.history.map((historyRow) =>
+                          <>
+                            <div class="history">
+                              <p style={{ fontWeight: "bold" }}>Transaction type:</p><p> {historyRow.Type}</p><p style={{ fontWeight: "bold" }}>TX ID:</p><p> {historyRow.TxID}</p>
+                            </div>
+                            <div class="container flex">
+                              <p style={{ fontWeight: "bold" }}>Transaction Hash:</p><a href="https://goerli.etherscan.io/tx/0x3bbe99a6146ff79c25d6ba73667d84a327b8bb92da10ee50873ec4a6e454689e"> {historyRow.TxHash}</a>
+                            </div>
+                            <div class="history" >
+                              <div><p style={{ fontWeight: "bold" }}>fee:</p><p> {historyRow.NetworkFee}</p></div>
+                              <div><p style={{ fontWeight: "bold" }}>amount:</p><p> {historyRow.Amount}</p></div>
+                              <div><p style={{ fontWeight: "bold" }}>Created:</p><p> {historyRow.Update}</p></div>
+                              <div><p style={{ fontWeight: "bold" }}>Signed:</p><p> {historyRow.Signed}</p></div>
+                              <div><p style={{ fontWeight: "bold" }}>AML:</p><p> {historyRow.AML}</p></div>
+                              <div><p style={{ fontWeight: "bold" }}>Note:</p><p> {historyRow.Note}</p></div>
+                            </div>
+                          </>
+                        )}
                       </div>
-                      <div class="container">
-                        <p style={{ fontWeight: "bold" }}>Transaction Hash:</p><a href="https://goerli.etherscan.io/tx/0x3bbe99a6146ff79c25d6ba73667d84a327b8bb92da10ee50873ec4a6e454689e"> {historyRow.TxHash}</a>
-                      </div>
-                      <div class="history" >
-                        <div><p style={{ fontWeight: "bold" }}>fee:</p><p> {historyRow.NetworkFee}</p></div>
-                        <div><p style={{ fontWeight: "bold" }}>amount:</p><p> {historyRow.Amount}</p></div>
-                        <div><p style={{ fontWeight: "bold" }}>Created:</p><p> {historyRow.Update}</p></div>
-                        <div><p style={{ fontWeight: "bold" }}>Signed:</p><p> {historyRow.Signed}</p></div>
-                        <div><p style={{ fontWeight: "bold" }}>AML:</p><p> {historyRow.AML}</p></div>
-                        <div><p style={{ fontWeight: "bold" }}>Note:</p><p> {historyRow.Note}</p></div>
-                      </div>
-                    </>
-                  )}
-                </div>
-              </Box>
-            </Collapse>
-          </TableCell>
-        </TableRow>
+                    </div>
+                  </Collapse>
+                </TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+        </TableContainer>
       </>
     );
   }

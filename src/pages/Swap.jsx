@@ -44,27 +44,26 @@ const Swap = () => {
   return (
 
 
-    <div className=" center  rounded-3xl">
+    <div className=" center  dark1" >
 
 
 
 
 
       <TabContext value={value}>
-        <Box sx={{ borderBottom: 'none', padding: '2%' }}>
+        <Box sx={{ borderBottom: 'none', padding: '2%',  }}>
 
           <Tabs onChange={handleChange} aria-label="Tabs">
-            <Tab label="uniswap" value="1" />
-            <Tab label="quickswap" value="2" />
+            <Tab style={{"color":"white",}} label="uniswap" value="1" />
+            <Tab style={{"color":"white",}} label="quickswap" value="2" />
           </Tabs>
           <TabPanel value="1">
 
 
-            <div>
-              <div class="uniswapdiv">
-                <iframe class="ifuniswap" src="https://app.uniswap.org/#/swap" scrolling="no" title="uniswap" frameBorder="0">
-                </iframe>
-              </div>
+
+
+            <div style={{ padding: "10px" }}>
+              <iframe frameBorder="0" style={{ padding: "10px", marginLeft: "auto", marginRight: "auto", border: 0, }} src="https://app.uniswap.org/#/swap" height="800" width="90%" title="The defi page"></iframe>
             </div>
 
 
@@ -72,12 +71,12 @@ const Swap = () => {
           </TabPanel>
           <TabPanel value="2">
 
-            <div>
-              <div class="quickswapdiv">
-                <iframe class="ifquickswap" src="https://quickswap.exchange/#/swap?swapIndex=0&currency0=ETH" scrolling="no" title="uniswap" frameBorder="0">
-                </iframe>
-              </div>
+
+
+            <div style={{ padding: "10px" }}>
+              <iframe frameBorder="0" style={{ padding: "10px", marginLeft: "auto", marginRight: "auto", border: 0, }} src="https://quickswap.exchange/#/swap?swapIndex=0&currency0=ETH" height="800" width="90%" title="The defi page"></iframe>
             </div>
+
           </TabPanel>
 
         </Box>

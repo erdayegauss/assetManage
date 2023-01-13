@@ -1,7 +1,8 @@
-import {React, useState} from 'react';
+import { React, useState } from 'react';
 
 import { defiData } from '../data/dummy';
-import {  Deficard } from '../components';
+import { Deficard } from '../components';
+import { Grid } from '@material-ui/core';
 
 const Defi = () => {
 
@@ -13,9 +14,26 @@ const Defi = () => {
   return (
 
     <div className=" m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
-      <div class="defihead">
+      <div >
 
-        <iframe src={link} height="100%" width="100%" title="Iframe Example"></iframe>
+
+        <Grid container spacing={2}>
+          <Grid container lg={8} spacing={2} >
+          <iframe src={link} height="100%" width="80%" title="Iframe Example"></iframe>
+          </Grid>
+
+          <Grid container lg={8} spacing={2} >
+
+
+            
+          </Grid>
+
+
+        </Grid>
+
+
+
+
 
       </div>
 

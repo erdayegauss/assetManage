@@ -51,22 +51,22 @@ const Invest = () => {
 
           <TabContext value={value} >
             <Box sx={{ borderBottom: 'none', borderColor: 'black', }}>
-              <div style={{ "padding": "1px", "fontSize": 15, "fontWeight": 600, }}>
-                Investment pair
+              <div style={{ color: "white", "padding": "1px", "fontSize": 20, "fontWeight": 600, }}>
+                Instruments:
               </div>
               <TabList onChange={handleChange} aria-label="lab API tabs example" >
-                <Tab style={{ width: "3%", }} label="BTC" value="1" icon={<img src="/img/btc.png" width="50%" />} iconPosition="start" ></Tab>
-                <Tab style={{ width: "3%", }} label="ETH" value="2" icon={<img src="/img/eth.png" width="50%" />} iconPosition="start" ></Tab>
-                <Tab style={{ width: "3%", }} label="Others" value="3" />
+                <Tab style={{ width: "3%", color: "white" }} label="BTC" value="1" icon={<img src="/img/btc.png" width="50%" />} iconPosition="start" ></Tab>
+                <Tab style={{ width: "3%", color: "white" }} label="ETH" value="2" icon={<img src="/img/eth.png" width="50%" />} iconPosition="start" ></Tab>
+                <Tab style={{ width: "3%", color: "white" }} label="Others" value="3" />
               </TabList>
             </Box>
             <TabPanel value="1">
 
-              <div style={{ "padding": "10px", "fontSize": 20, "fontWeight": 700, }}>
+              <div style={{ color: "white", "padding": "10px", "fontSize": 20, "fontWeight": 700, }}>
                 Settlement pair
               </div>
 
-              <div id="id-symbol" className='flex' style={{ "padding": "10px" }}>
+              <div id="id-symbol" className='flex' style={{ color: "white", "padding": "10px" }}>
                 <div class="flex">
                   <div class="flex">
                     BTC<span role="img" aria-label="swap-right" class="anticon anticon-swap-right"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="swap-right" width="1em" height="1em" fill="currentColor" aria-hidden="true">
@@ -87,28 +87,28 @@ const Invest = () => {
                 padding: "16px",
                 width: "100%",
                 background: "#02c8a80d",
-                color: "#0f0f0f",
+                color: "white",
               }} >
-                <div style={{ "fontSize": 20, "fontWeight": 700, }}>Sell High and Earn High Yield
+                <div style={{"fontSize": 20, "fontWeight": 700, }}>Sell High and Earn High Yield
                 </div>
-                <li>Upon maturity, if the market
+                <li >Upon maturity, if the market
                   price ≥ strike price, you will receive USDⓢ</li>
                 <li>Upon maturity, if the market
                   price &lt; strike price, you will receive BTC</li>
               </div>
 
 
-
               <TableContainer component={Paper}>
-                <Table sx={{ minWidth: 650, "& td, &  th": { border: 0 } }} size="small" aria-label="a dense table">
+                <Table sx={{ color: "wheat", backgroundColor: "#0b2233", minWidth: 650, "& td, &  th": { border: 0 } }} size="small" aria-label="a dense table">
                   <TableHead>
-                    <TableRow>
-                      <TableCell>Settle pair</TableCell>
-                      <TableCell align="left">APR</TableCell>
-                      <TableCell align="left">Strike Price</TableCell>
-                      <TableCell align="left">Maturity</TableCell>
-                      <TableCell align="left">Tenor</TableCell>
-                      <TableCell align="left"></TableCell>
+                    <TableRow >
+                      <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }}>Settle pair</TableCell>
+                      <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">APR</TableCell>
+                      <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">Strike Price</TableCell>
+                      <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">Maturity</TableCell>
+                      <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">Tenor</TableCell>
+                      <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left"></TableCell>
+
                     </TableRow>
                   </TableHead>
                   <TableBody>
@@ -117,7 +117,7 @@ const Invest = () => {
                         key={row.name}
 
                       >
-                        <TableCell style={{ width: '30%' }} component="th" scope="row" >
+                        <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400, width: '30%' }} component="th" scope="row" >
 
                           <div className="flex-container">
                             <img style={{ "width": "12%", "padding": "10px" }} src="/img/btc.png" />
@@ -133,11 +133,11 @@ const Invest = () => {
 
 
                         </TableCell>
-                        <TableCell align="left">{row.apr}</TableCell>
-                        <TableCell align="left">{row.strike}</TableCell>
-                        <TableCell align="left">{row.maturity}</TableCell>
-                        <TableCell align="left">{row.tenor}</TableCell>
-                        <TableCell align="left"><Button variant="contained" color="secondary">Subscribe</Button></TableCell>
+                        <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">{row.apr}</TableCell>
+                        <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">{row.strike}</TableCell>
+                        <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">{row.maturity}</TableCell>
+                        <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">{row.tenor}</TableCell>
+                        <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left"><Button variant="contained" color="secondary">Subscribe</Button></TableCell>
                       </TableRow>
                     ))}
                   </TableBody>
@@ -145,16 +145,16 @@ const Invest = () => {
               </TableContainer>
 
 
-
             </TabPanel>
 
             <TabPanel value="2">
 
-              <div style={{ "padding": "10px", "fontSize": 20, "fontWeight": 700, }}>
+      
+            <div style={{ color: "white", "padding": "10px", "fontSize": 20, "fontWeight": 700, }}>
                 Settlement pair
               </div>
 
-              <div id="id-symbol" className='flex' style={{ "padding": "10px" }}>
+              <div id="id-symbol" className='flex' style={{ color: "white", "padding": "10px" }}>
                 <div class="flex">
                   <div class="flex">
                     ETH<span role="img" aria-label="swap-right" class="anticon anticon-swap-right"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="swap-right" width="1em" height="1em" fill="currentColor" aria-hidden="true">
@@ -173,31 +173,30 @@ const Invest = () => {
               <div style={{
                 margin: "12px 0",
                 padding: "16px",
-                width: "160%",
+                width: "100%",
                 background: "#02c8a80d",
-                color: "#0f0f0f",
+                color: "white",
               }} >
-                <div style={{ "fontSize": 20, "fontWeight": 700, }}>Sell High and Earn High Yield
+                <div style={{"fontSize": 20, "fontWeight": 700, }}>Sell High and Earn High Yield
                 </div>
-                <li>Upon maturity, if the market
+                <li >Upon maturity, if the market
                   price ≥ strike price, you will receive USDⓢ</li>
                 <li>Upon maturity, if the market
-                  price &lt; strike price, you will receive BTC</li>
+                  price &lt; strike price, you will receive ETH</li>
               </div>
 
 
-
-              <TableContainer style={{"overflow-x": "visible"}} >
-              <Table sx={{ "minWidth": "160%", "& td, &  th": { border: 0 } }} size="small" aria-label="a dense table">
-
+              <TableContainer component={Paper}>
+                <Table sx={{ color: "wheat", backgroundColor: "#0b2233", minWidth: 650, "& td, &  th": { border: 0 } }} size="small" aria-label="a dense table">
                   <TableHead>
-                    <TableRow>
-                      <TableCell>Settle pair</TableCell>
-                      <TableCell align="left">APR</TableCell>
-                      <TableCell align="left">Strike Price</TableCell>
-                      <TableCell align="left">Maturity</TableCell>
-                      <TableCell align="left">Tenor</TableCell>
-                      <TableCell align="left"></TableCell>
+                    <TableRow >
+                      <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }}>Settle pair</TableCell>
+                      <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">APR</TableCell>
+                      <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">Strike Price</TableCell>
+                      <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">Maturity</TableCell>
+                      <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">Tenor</TableCell>
+                      <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left"></TableCell>
+
                     </TableRow>
                   </TableHead>
                   <TableBody>
@@ -206,11 +205,11 @@ const Invest = () => {
                         key={row.name}
 
                       >
-                        <TableCell style={{ width: '30%' }} component="th" scope="row" >
+                        <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400, width: '30%' }} component="th" scope="row" >
 
                           <div className="flex-container">
                             <img style={{ "width": "12%", "padding": "10px" }} src="/img/eth.png" />
-                            <a>BTC</a>
+                            <a>ETH</a>
                             <svg viewBox="0 0 1024 1024" focusable="false" data-icon="swap-right" width="1em" height="1em" fill="currentColor" aria-hidden="true">
                               <path d="M873.1 596.2l-164-208A32 32 0 00684 376h-64.8c-6.7 0-10.4 7.7-6.3 13l144.3 183H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h695.9c26.8 0 41.7-30.8 25.2-51.8z">
                               </path>
@@ -222,11 +221,11 @@ const Invest = () => {
 
 
                         </TableCell>
-                        <TableCell align="left">{row.apr}</TableCell>
-                        <TableCell align="left">{row.strike}</TableCell>
-                        <TableCell align="left">{row.maturity}</TableCell>
-                        <TableCell align="left">{row.tenor}</TableCell>
-                        <TableCell align="left"><Button variant="contained" color="secondary">Subscribe</Button></TableCell>
+                        <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">{row.apr}</TableCell>
+                        <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">{row.strike}</TableCell>
+                        <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">{row.maturity}</TableCell>
+                        <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">{row.tenor}</TableCell>
+                        <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left"><Button variant="contained" color="secondary">Subscribe</Button></TableCell>
                       </TableRow>
                     ))}
                   </TableBody>
@@ -237,21 +236,21 @@ const Invest = () => {
 
             </TabPanel>
 
-            <TabPanel value="4">
+            <TabPanel value="3">
 
-              <div style={{ "padding": "10px", "fontSize": 20, "fontWeight": 700, }}>
+            <div style={{ color: "white", "padding": "10px", "fontSize": 20, "fontWeight": 700, }}>
                 Settlement pair
               </div>
 
-              <div id="id-symbol" className='flex' style={{ "padding": "10px" }}>
+              <div id="id-symbol" className='flex' style={{ color: "white", "padding": "10px" }}>
                 <div class="flex">
                   <div class="flex">
-                    BTC<span role="img" aria-label="swap-right" class="anticon anticon-swap-right"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="swap-right" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                    ETH<span role="img" aria-label="swap-right" class="anticon anticon-swap-right"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="swap-right" width="1em" height="1em" fill="currentColor" aria-hidden="true">
                       <path d="M873.1 596.2l-164-208A32 32 0 00684 376h-64.8c-6.7 0-10.4 7.7-6.3 13l144.3 183H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h695.9c26.8 0 41.7-30.8 25.2-51.8z">
                       </path>
                     </svg></span>USDⓢ</div>
                   <p>&emsp;&emsp;&emsp;&emsp;</p>
-                  <div class="flex ">BTC<span role="img" aria-label="swap-right" class="anticon anticon-swap-right"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="swap-right" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                  <div class="flex ">ETH<span role="img" aria-label="swap-right" class="anticon anticon-swap-right"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="swap-right" width="1em" height="1em" fill="currentColor" aria-hidden="true">
                     <path d="M873.1 596.2l-164-208A32 32 0 00684 376h-64.8c-6.7 0-10.4 7.7-6.3 13l144.3 183H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h695.9c26.8 0 41.7-30.8 25.2-51.8z">
                     </path>
                   </svg></span>USDT</div>
@@ -264,29 +263,28 @@ const Invest = () => {
                 padding: "16px",
                 width: "100%",
                 background: "#02c8a80d",
-                color: "#0f0f0f",
-
-              }} id="id-coin">
-                <div style={{ "fontSize": 20, "fontWeight": 700, }}>Sell High and Earn High Yield
+                color: "white",
+              }} >
+                <div style={{"fontSize": 20, "fontWeight": 700, }}>Sell High and Earn High Yield
                 </div>
-                <li>Upon maturity, if the market
+                <li >Upon maturity, if the market
                   price ≥ strike price, you will receive USDⓢ</li>
                 <li>Upon maturity, if the market
-                  price &lt; strike price, you will receive BTC</li>
+                  price &lt; strike price, you will receive ETH</li>
               </div>
 
 
-
               <TableContainer component={Paper}>
-                <Table sx={{ minWidth: 650, "& td, &  th": { border: 0 } }} size="small" aria-label="a dense table">
+                <Table sx={{ color: "wheat", backgroundColor: "#0b2233", minWidth: 650, "& td, &  th": { border: 0 } }} size="small" aria-label="a dense table">
                   <TableHead>
-                    <TableRow>
-                      <TableCell>Settle pair</TableCell>
-                      <TableCell align="left">APR</TableCell>
-                      <TableCell align="left">Strike Price</TableCell>
-                      <TableCell align="left">Maturity</TableCell>
-                      <TableCell align="left">Tenor</TableCell>
-                      <TableCell align="left"></TableCell>
+                    <TableRow >
+                      <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }}>Settle pair</TableCell>
+                      <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">APR</TableCell>
+                      <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">Strike Price</TableCell>
+                      <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">Maturity</TableCell>
+                      <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">Tenor</TableCell>
+                      <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left"></TableCell>
+
                     </TableRow>
                   </TableHead>
                   <TableBody>
@@ -295,11 +293,11 @@ const Invest = () => {
                         key={row.name}
 
                       >
-                        <TableCell style={{ width: '30%' }} component="th" scope="row" >
+                        <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400, width: '30%' }} component="th" scope="row" >
 
                           <div className="flex-container">
                             <img style={{ "width": "12%", "padding": "10px" }} src="/img/btc.png" />
-                            <a>BTC</a>
+                            <a>ETH</a>
                             <svg viewBox="0 0 1024 1024" focusable="false" data-icon="swap-right" width="1em" height="1em" fill="currentColor" aria-hidden="true">
                               <path d="M873.1 596.2l-164-208A32 32 0 00684 376h-64.8c-6.7 0-10.4 7.7-6.3 13l144.3 183H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h695.9c26.8 0 41.7-30.8 25.2-51.8z">
                               </path>
@@ -311,11 +309,11 @@ const Invest = () => {
 
 
                         </TableCell>
-                        <TableCell align="left">{row.apr}</TableCell>
-                        <TableCell align="left">{row.strike}</TableCell>
-                        <TableCell align="left">{row.maturity}</TableCell>
-                        <TableCell align="left">{row.tenor}</TableCell>
-                        <TableCell align="left"><Button variant="contained" color="secondary">Subscribe</Button></TableCell>
+                        <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">{row.apr}</TableCell>
+                        <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">{row.strike}</TableCell>
+                        <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">{row.maturity}</TableCell>
+                        <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left">{row.tenor}</TableCell>
+                        <TableCell style={{ color: "white", fontSize: 16, fontWeight: 400 }} align="left"><Button variant="contained" color="secondary">Subscribe</Button></TableCell>
                       </TableRow>
                     ))}
                   </TableBody>

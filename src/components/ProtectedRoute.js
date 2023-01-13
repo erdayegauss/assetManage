@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Route, Navigate } from "react-router-dom";
 import { useGlobalState } from "../contexts/GlobalContext";
 //import jwt from "jsonwebtoken";
 
 const ProtectedRoute = ({ component: Component, ...rest }) => {
-  const { toggleLoading, editError, loggedInUser } = useGlobalState();
+  const { toggleLoading } = useGlobalState();
 
   function checkAuth() {
     toggleLoading(true);

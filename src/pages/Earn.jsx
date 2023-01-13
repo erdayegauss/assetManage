@@ -109,34 +109,34 @@ const Earn = () => {
 
 
 
-              <TableContainer component={Paper}  >
+              <TableContainer component={Paper} class="earntext"  >
                 <Table sx={{ "& td, &  th": { border: 0 } }} size="small" aria-label="a dense table">
                   <TableHead>
-                    <TableRow>
-                      <TableCell>Name</TableCell>
-                      <TableCell align="left">Tenor</TableCell>
-                      <TableCell align="left">APR</TableCell>
+                    <TableRow >
+                      <TableCell class="earntext">Name</TableCell>
+                      <TableCell align="left" class="earntext">Tenor</TableCell>
+                      <TableCell align="left" class="earntext">APR</TableCell>
                       <TableCell align="left"></TableCell>
                     </TableRow>
                   </TableHead>
                   <TableBody>
                     {rows.map((row) => (
                       <TableRow
-                        key={row.name}
+                        key={row.name} 
                       >
-                        <TableCell style={{ width: '55%' }} component="th" scope="row" >
+                        <TableCell style={{ width: '45%' }} component="th" scope="row" >
 
                           <div className="flex-container">
                             <img style={{ "width": "10%", "padding": "10px" }} src="/img/btc.png" />
 
                             
-                            <a>{row.name}</a>
+                            <a class="earntext">{row.name}</a>
                             <img style={{ "width": "30%", "padding": "10px" }} src="/img/banner1.png" />
                           </div>
 
                         </TableCell>
-                        <TableCell align="left">{row.calories}</TableCell>
-                        <TableCell align="left">{row.fat}</TableCell>
+                        <TableCell align="left" class="earntext" >{row.calories}</TableCell>
+                        <TableCell align="left" class="earntext">{row.fat}</TableCell>
                         <TableCell style={{ width: '20%' }} align="left"><Button variant="contained" color="secondary">Subscribe</Button></TableCell>
                       </TableRow>
                     ))}
@@ -145,8 +145,7 @@ const Earn = () => {
               </TableContainer>
 
             </TabPanel>
-            <TabPanel value="2">Item Two</TabPanel>
-            <TabPanel value="3">Item Three</TabPanel>
+            <TabPanel value="2"></TabPanel>
           </TabContext>
 
         </Grid>
